@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 182, 193, 0.5)), url('background.jpg') repeat;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #FF69B4;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2);
+}
+
+
+.wide {
+    flex: 3;
+}
+
+.medium {
+    flex: 2;
+}
+
+.small {
+    flex: 2;
+    
+}
+
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.images img {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+
+h2 {
+    font-size: 2em;
+    color: #FF69B4;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+ol {
+    list-style-type: upper-roman;
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .images img {
+        width: 100%;
+    }
+}
